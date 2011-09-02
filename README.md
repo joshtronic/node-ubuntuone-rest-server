@@ -20,6 +20,8 @@ Communicating with the server can be done by pointing your web browser to http:/
 
 The format of the URI is /objectPath/method
 
+The data is returned as JSON
+
 ## What's the future hold?
 
 * Documentation page when calling the server with no path
