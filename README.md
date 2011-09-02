@@ -28,3 +28,4 @@ The data is returned as JSON
 * Support for the root object path's methods (connect, disconnect, et cetera)
 * POST methods to push as well as pull data
 * Potentially spinning off this server into a more generic DBus web interface
+* Most likely a rewrite in Python to utilize Dbus bindings instead of parsing
