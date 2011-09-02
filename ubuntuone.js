@@ -102,8 +102,15 @@ http.createServer(function(request, response)
 						value    = '';
 					}
 				}
+				
+				payload = payload.replace('{{', '[{').replace('}}', '}]');
 
-				response.end(payload.replace('{{', '[{').replace('}}', '}]'));
+				if (payload.charAt(0) != '[')
+				{
+					payload = '[' + payload + ']';
+				}
+
+				response.end(payload + '\n');
 			}
 
 		});
