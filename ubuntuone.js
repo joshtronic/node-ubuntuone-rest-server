@@ -68,6 +68,11 @@ http.createServer(function(request, response)
 							else
 							{
 								value = pieces[1];
+
+								if (value == '')
+								{
+									value = null;
+								}
 							}
 
 							line = '';
@@ -82,7 +87,16 @@ http.createServer(function(request, response)
 							payload += ',';
 						}
 
-						payload += '"' + variable + '":"' + value + '"';
+						payload += '"' + variable + '":';
+						
+						if (value == null)
+						{
+							payload += '""';
+						}
+						else
+						{
+							payload += '"' + value + '"';
+						}
 						
 						variable = '';
 						value    = '';
