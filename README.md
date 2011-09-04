@@ -2,11 +2,11 @@
 
 ## What's it do?
 
-Creates a RESTful interface to Ubuntu One's DBus interface that lives on port 3000 and can be utlized to build client side web applications on top of Ubuntu One.
+Creates a RESTful interface to Ubuntu One's D-Bus interface that lives on port 3000 and can be utlized to build client side web applications on top of Ubuntu One.
 
 ## How do I run it?
 
-Assuming you already have Node.js on your system and are running Ubuntu (Only OS I'll be testing this one) then all you need to do is run:
+Assuming you already have Node.js and dbus-send on your system and are running Ubuntu (Only OS I'll be testing this on) then all you need to do is run:
 
 	node ubuntuone.js
 
